@@ -3,6 +3,12 @@
 body {
     margin: 0;
 }
+
+hr {
+    opacity: 0.1;
+}
+
+/* ------------------------------------------------------------------- */
 /* Header Styling */
 
 #default_header .header_wrapper {
@@ -39,6 +45,7 @@ body {
     width: 25px;
 }
 
+/* ------------------------------------------------------------------- */
 /* Footer Styling */
 
 #default_footer {
@@ -63,7 +70,7 @@ body {
 
 #default_footer .footer_main_links a, 
 #default_footer .footer_catalogue_links a,
-.footer_follow_us_links a,
+#default_footer .footer_follow_us_links a,
 #default_footer .footer_contact p {
     padding: 10px 0;
     margin: 0;
@@ -72,7 +79,8 @@ body {
 
 #default_footer .footer_main_links a:hover,
 #default_footer .footer_catalogue_links a:hover,
-#default_footer .footer_follow_us_links a:hover {
+#default_footer .footer_follow_us_links a:hover,
+#default_footer .footer_copyright_text a:hover {
     opacity: 1;
 }
 
@@ -86,3 +94,27 @@ body {
     grid-template-columns: 48% 48%;
     grid-column-gap: 4%;
 }
+
+#default_footer .footer_copyright_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+#default_footer .footer_copyright_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#default_footer .footer_copyright_text p {
+    opacity: 0.6;
+} 
+
+#default_footer .footer_copyright_text a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+} 
