@@ -1,11 +1,41 @@
 /* styling for fonts, color scheme, header and footer */
 
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p, a{
+    font-size: 18px;
+}
+
 body {
     margin: 0;
 }
 
 hr {
     opacity: 0.1;
+    border-width: 0.2px;
+    margin: 0;
 }
 
 /* ------------------------------------------------------------------- */
@@ -19,19 +49,19 @@ hr {
 }
 
 #default_header .header_logo {
-    width: 60%;
-    padding: 10px;
+    width: 50%;
+    padding: 20px;
 }
 
 #default_header .header_links {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px;
 }
 
 #default_header .header_links a {
     padding: 10px;
-    font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
     color: #0261A1;
     opacity: 1;
@@ -42,7 +72,7 @@ hr {
 }
 
 #default_header .header_links img {
-    width: 25px;
+    width: 20px;
 }
 
 /* ------------------------------------------------------------------- */
@@ -59,11 +89,12 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px;
+    padding: 75px;
 }
 
 #default_footer .footer_main_links,
-#default_footer .footer_catalogue_links {
+#default_footer .footer_catalogue_links,
+#default_footer .footer_contact {
     display: flex;
     flex-direction: column;
 }
@@ -71,16 +102,21 @@ hr {
 #default_footer .footer_main_links a, 
 #default_footer .footer_catalogue_links a,
 #default_footer .footer_follow_us_links a,
-#default_footer .footer_contact p {
+#default_footer .footer_contact p,
+#default_footer .footer_contact a,
+#default_footer .footer_copyright_text a {
     padding: 10px 0;
     margin: 0;
     opacity: 0.6;
+    text-decoration: none;
+    color: white;
 }
 
 #default_footer .footer_main_links a:hover,
 #default_footer .footer_catalogue_links a:hover,
 #default_footer .footer_follow_us_links a:hover,
-#default_footer .footer_copyright_text a:hover {
+#default_footer .footer_copyright_text a:hover,
+#default_footer .footer_contact a:hover {
     opacity: 1;
 }
 
@@ -100,21 +136,16 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 0px 75px;
 }
 
-#default_footer .footer_copyright_text {
+#default_footer .footer_copyright_text,
+#default_footer .footer_call_wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 #default_footer .footer_copyright_text p {
-    opacity: 0.6;
-} 
-
-#default_footer .footer_copyright_text a {
-    text-decoration: none;
-    color: white;
     opacity: 0.6;
 } 

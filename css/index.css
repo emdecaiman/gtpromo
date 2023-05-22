@@ -1,0 +1,28 @@
+#main_body #top_image_section {
+    height: 600px;
+    background-image: url("../images/embroidery_holder.png");
+    background-size: cover;
+    position: relative;
+}
+
+#main_body .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.4)
+}
+
+#main_body .overlay h1 {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 80px;
+
+}
+
+#main_body #about_section h2 {
+    font-family: "Nunito Sans", sans-serif;
+    padding: 80px;
+    text-align: center;
+}
