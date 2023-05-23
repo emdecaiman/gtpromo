@@ -1,11 +1,11 @@
-#main_body #top_image_section {
+#index_body #index_top_image_section {
     height: 600px;
     background-image: url("../images/embroidery_holder.png");
     background-size: cover;
     position: relative;
 }
 
-#main_body .overlay {
+#index_body .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -14,15 +14,27 @@
     background: rgb(0, 0, 0, 0.4)
 }
 
-#main_body .overlay h1 {
+#index_body .overlay h1 {
     color: white;
     font-family: "Nunito Sans", sans-serif;
     padding: 80px;
 
 }
 
-#main_body #about_section h2 {
+#index_body #index_about_section h2 {
     font-family: "Nunito Sans", sans-serif;
     padding: 80px;
     text-align: center;
+}
+
+#index_body .index_catalogue_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#index_body .index_catalogue_icon {
+    width: 100px;
+    height: 100px;
 }
