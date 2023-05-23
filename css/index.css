@@ -18,7 +18,6 @@
     color: white;
     font-family: "Nunito Sans", sans-serif;
     padding: 80px;
-
 }
 
 #index_body #index_about_section h2 {
@@ -31,10 +30,26 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#index_body .index_catalogue_icon {
-    width: 100px;
-    height: 100px;
+#index_body .index_apparel,
+#index_body .index_workwear,
+#index_body .index_teamwear,
+#index_body .index_promotional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#index_body .index_apparel a,
+#index_body .index_workwear a,
+#index_body .index_teamwear a,
+#index_body .index_promotional a {
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin: 20px 0;
 }
