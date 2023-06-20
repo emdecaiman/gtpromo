@@ -49,7 +49,7 @@ hr {
 }
 
 #default_header .header_logo {
-    width: 50%;
+    width: 20%;
     padding: 20px;
 }
 
@@ -127,8 +127,7 @@ hr {
 
 #default_footer .footer_grid_main_links {
     display: grid;
-    grid-template-columns: 48% 48%;
-    grid-column-gap: 4%;
+    grid-template-columns: 50% 50%;
 }
 
 #default_footer .footer_copyright_wrapper {

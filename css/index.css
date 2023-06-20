@@ -1,7 +1,10 @@
+/* Top Page Div */
+
 #index_body #index_top_image_section {
-    height: 600px;
-    background-image: url("../images/embroidery_holder.png");
+    height: 500px;
+    background-image: url("../images/embroidery_machine.png");
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -26,30 +29,74 @@
     text-align: center;
 }
 
+/* Catalogue Wrapper Styling Div */
+
 #index_body .index_catalogue_wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
 }
 
-#index_body .index_apparel,
-#index_body .index_workwear,
-#index_body .index_teamwear,
-#index_body .index_promotional {
+#index_body .index_company_workwear,
+#index_body .index_teamear,
+#index_body .index_schoolwear,
+#index_body .index_nonprofit {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#index_body .index_apparel a,
-#index_body .index_workwear a,
-#index_body .index_teamwear a,
-#index_body .index_promotional a {
+#index_body .index_company_workwear,
+#index_body .index_teamwear,
+#index_body .index_schoolwear,
+#index_body .index_nonprofit {
     font-family: "Nunito Sans", sans-serif;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    font-size: 24px;
-    margin: 20px 0;
+    width: 250px;
+}
+
+#index_body .index_company_workwear p,
+#index_body .index_teamwear p,
+#index_body .index_schoolwear p,
+#index_body .index_nonprofit p {
+    opacity: 0.6;
+}
+
+#index_body .index_company_workwear img,
+#index_body .index_teamwear img,
+#index_body .index_schoolwear img,
+#index_body .index_nonprofit img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#index_body .index_catalogue_content_wrapper {
+    padding: 0 20px;
+}
+
+/* Why Us Div */
+
+#index_why_us_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+#index_why_us_section .index_why_us_photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#index_why_us_section .index_why_us_content {
+    padding: 0 100px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+#index_why_us_section .index_why_us_content h4 {
+    font-weight: normal;
+    opacity: 0.6;
 }
