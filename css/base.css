@@ -63,8 +63,6 @@ hr {
 #default_header .header_links a {
     padding: 10px;
     font-family: "Nunito Sans", sans-serif;
-    color: #0261A1;
-    opacity: 1;
 }
 
 #default_header .header_links a:hover {
