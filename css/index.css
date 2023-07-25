@@ -19,12 +19,10 @@
 
 #index_body .overlay h1 {
     color: white;
-    font-family: "Nunito Sans", sans-serif;
     padding: 80px;
 }
 
 #index_body #index_about_section h2, #index_quote_section h2 {
-    font-family: "Nunito Sans", sans-serif;
     padding: 80px;
     margin: 0;
     text-align: center;
@@ -53,7 +51,6 @@
 #index_body .index_teamwear,
 #index_body .index_schoolwear,
 #index_body .index_nonprofit {
-    font-family: "Nunito Sans", sans-serif;
     width: 250px;
     height: 450px;
     box-shadow: 0 0.7961918735236395px 2.3885756205709185px -0.625px #0000000d, 
@@ -101,7 +98,6 @@
 
 #index_why_us_section .index_why_us_content {
     padding: 0 100px;
-    font-family: "Nunito Sans", sans-serif;
 }
 
 #index_why_us_section .index_why_us_content h4 {
@@ -119,6 +115,7 @@
     max-width: 1680px;
     width: 80vw;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 #index_quote_section .index_name_email_wrapper {
@@ -129,18 +126,55 @@
 
 #index_quote_section .index_quote_left textarea {
     max-width: 100%;
+    max-height: 40vh;
     min-width: 100%;
     min-height: 200px;
-    padding: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgb(242, 242, 242);
+    margin: 15px 0;
+    
 }
 
 #index_quote_section .index_quote_left, 
 #index_quote_section .index_quote_right {
     width: 50%;
+    min-width: 50%;
+    max-width: 50%;
 }
 
 #index_quote_section .index_quote_left input {
     width: 48%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgb(242, 242, 242);
+
+}
+
+#index_quote_section .index_quote_left input[type="submit"] {
+    width: 100%;
+    background-color: rgb(227,59,44);
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#index_quote_section .index_quote_left input[type="submit"]:hover {
+    background-color: rgb(84,84,84);
+    color: white;
+    cursor: pointer;
+}
+
+#index_quote_section .index_quote_left input:active,
+#index_quote_section .index_quote_left input:focus {
+    outline: none;
+}
+
+#index_quote_section .index_quote_left textarea:active,
+#index_quote_section .index_quote_left textarea:focus {
+    outline: none;
 }
 
 #index_quote_section .index_quote_right li {
