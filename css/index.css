@@ -23,9 +23,10 @@
     padding: 80px;
 }
 
-#index_body #index_about_section h2 {
+#index_body #index_about_section h2, #index_quote_section h2 {
     font-family: "Nunito Sans", sans-serif;
     padding: 80px;
+    margin: 0;
     text-align: center;
 }
 
@@ -90,7 +91,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 #index_why_us_section .index_why_us_photo img {
@@ -106,4 +107,42 @@
 #index_why_us_section .index_why_us_content h4 {
     font-weight: normal;
     opacity: 0.6;
+}
+
+/* Quote Div */
+
+#index_quote_section .index_quote_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1680px;
+    width: 80vw;
+    margin: auto;
+}
+
+#index_quote_section .index_name_email_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+#index_quote_section .index_quote_left textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    padding: 0;
+}
+
+#index_quote_section .index_quote_left, 
+#index_quote_section .index_quote_right {
+    width: 50%;
+}
+
+#index_quote_section .index_quote_left input {
+    width: 48%;
+}
+
+#index_quote_section .index_quote_right li {
+    list-style-type: none;
 }
